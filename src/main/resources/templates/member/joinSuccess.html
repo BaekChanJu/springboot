@@ -1,0 +1,17 @@
+<!-- 타임리프설정 -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>회원가입성공성공</title>
+</head>
+<body>
+	<h1>회원가입성공성공페이지</h1>
+	<!-- 모델에서 찾는방법 -->
+	<div><span th:text='${message}'></span>야호</div>
+	
+	<hr/>
+	<!--  <a >로그아웃</a>-->
+	<a th:href="@{/member/loginForm}">로그인</a>
+</body>
+</html>

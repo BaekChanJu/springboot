@@ -1,0 +1,20 @@
+<html xmlns="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>테스트</title>
+	</head>
+	
+	<body>
+		<!--JSP 에 jstl을 썻었다 지금까지
+		${msg} 이렇게 변수명을 넣으면 출력이 됬었다
+		-->
+		<!-- <h1>${변수}</h1> -->
+		
+		
+		<!-- 이게 타임리프 스타일-->
+		<h1 th:text="${msg}"></h1>
+		<div th:text="${msg}"></div>
+		
+		
+	</body>	
+</html>

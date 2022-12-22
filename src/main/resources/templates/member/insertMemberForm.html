@@ -1,0 +1,32 @@
+<!-- 타임리프설정 -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>새글등록</title>
+</head>
+<body>
+<h1>글등록</h1>		
+<hr>
+<form th:action="@{saveMember}" method="post">
+	<table border="1" cellpadding="0" cellspacing="0">
+		<tr>
+			<td bgcolor="orange" width="70">아이디</td>
+			<td align="left"><input type="text" name="userId"/></td>
+		</tr>
+		<tr>
+			<td bgcolor="orange">이름</td>
+			<td align="left"><input type="text" name="userName" size="10"/></td>
+		</tr>
+		<tr>
+			<td bgcolor="orange">패스워드</td>
+			<td align="left"><input type="password" name="userPass" size="10"/></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit"	 value=" 새글등록 "/></td>
+		</tr>
+	</table>
+</form>
+<hr>
+<!--  <a th:href="@{/board/getBoardList}">글목록가기</a>-->
+</body>
+</html>
